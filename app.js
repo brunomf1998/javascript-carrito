@@ -92,8 +92,8 @@ const pintarFooter = () => {
     let contador = 0;
     let total = 0;
     if (Object.keys(carrito).length === 0) {
-        footer.innerHTML = '<th scope="row" colspan="5"></th>'
-        return
+        footer.innerHTML = '<th scope="row" colspan="5"></th>';
+        return;
     }
     Object.values(carrito).forEach(item => {
         contador += item.cantidad;
